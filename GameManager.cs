@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class GameManager : MonoBehaviour
 {
     public static int[,] ARR = new int[19, 14];
@@ -32,6 +33,7 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
     int check(int i, int j)
     {
         try

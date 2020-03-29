@@ -18,12 +18,12 @@ public class win_sprite : MonoBehaviour
 
     void Update()
     {    
-        if (GameManager.win == 1)
+        if (GameManager.win == 7)
         {
             spriteRenderer.sprite = white;
             spriteRenderer.enabled = true;
         }
-        if (GameManager.win == 2)
+        if (GameManager.win == 13)
         {
             spriteRenderer.sprite = black;
             spriteRenderer.enabled = true;

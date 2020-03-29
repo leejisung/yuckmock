@@ -18,12 +18,12 @@ public class hextile : MonoBehaviour
         {
             if (GameManager.black_or_white == 1)
             {
-                GameManager.ARR[x, y] = 1;
+                GameManager.ARR[x, y] = 7;
                 GameManager.black_or_white = 2;
             }
             else if (GameManager.black_or_white == 2)
             {
-                GameManager.ARR[x, y] = 2;
+                GameManager.ARR[x, y] = 13;
                 GameManager.black_or_white = 1;
             }
 
@@ -32,13 +32,21 @@ public class hextile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.ARR[x, y] == 1)
+        if (Input.GetMouseButtonUp(0))
         {
-            render.color = new Color(255,255,255,255);
+            if (GameManager.ARR[x, y] == 7)
+            {
+                render.color = new Color(255, 255, 255, 255);
+            }
+            else if (GameManager.ARR[x, y] == 13)
+            {
+                render.color = new Color(0, 0, 0, 255);
+            }
+            else if (GameManager.ARR[x, y] == 0)
+            {
+                render.color = new Color(150 / 255f, 150 / 255f, 150 / 255f, 255 / 255f);
+            }
         }
-        if (GameManager.ARR[x, y] == 2)
-        {
-            render.color = new Color(0, 0, 0, 255);
-        }
+
     }
 }
