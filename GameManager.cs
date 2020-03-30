@@ -65,6 +65,7 @@ public class GameManager : MonoBehaviour
                     return ARR[i, j];
                 }
             }
+            catch { }
             finally {}
             try
             {
@@ -79,6 +80,7 @@ public class GameManager : MonoBehaviour
                     return ARR[i, j];
                 }
             }
+            catch {}
             finally {}
 
         }
@@ -97,6 +99,7 @@ public class GameManager : MonoBehaviour
                     return ARR[i, j];
                 }
             }
+            catch { }
             finally { }
             try
             {
@@ -111,6 +114,7 @@ public class GameManager : MonoBehaviour
                     return ARR[i, j];
                 }
             }
+            catch { }
             finally { }
         }
         return 0;
